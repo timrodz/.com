@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 export const Global = createGlobalStyle`
   html {
@@ -64,7 +64,7 @@ export const Global = createGlobalStyle`
     }
     mark {
       background-color: #ff0;
-      color: #000;
+      color: ${props => props.theme.black};
     }
     small {
       font-size: 80%;
@@ -623,4 +623,4 @@ export const Global = createGlobalStyle`
       }
     }
   }
-`
+`;
