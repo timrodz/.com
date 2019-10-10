@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "name": "Twitter",
+    "link": "https://twitter.com/timrodz",
+    "icon": "/icons/twitter.svg"
+  },
+  {
+    "id": 1,
+    "name": "Github",
+    "link": "https://github.com/timrodz",
+    "icon": "/icons/github.svg"
+  },
+  {
+    "id": 2,
+    "name": "LinkedIn",
+    "link": "https://www.linkedin.com/in/timrodz/",
+    "icon": "/icons/linkedin.svg"
+  },
+  {
+    "id": 3,
+    "name": "StackOverflow",
+    "link": "https://stackoverflow.com/users/4329379/juan-morais",
+    "icon": "/icons/stackoverflow.svg"
+  }
+]
