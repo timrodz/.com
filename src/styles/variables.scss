@@ -1,0 +1,17 @@
+// Theme mains
+$primary: #ff844a;
+$secondary: #26beaf;
+
+// Basic colours
+$white: #fff;
+$transparent: rgba(0, 0, 0, 0.11);
+$black: #0d1321;
+$gray: #707070;
+$contact-error: #ff4136;
+
+// Decorators
+$cta-hover: darken($primary, 2%);
+$border: 2px solid $secondary;
+$item-shadow: 0 0 3px 0 $transparent;
+$background-main: $secondary;
+$background-light: #e0f2e9;
