@@ -8,9 +8,12 @@ export const Footer = () => (
   <Wrapper>
     <Flex as={Container}>
       <Details>
-        <h2>{info.name}</h2>
+        <h2>
+          Thank you for visiting!
+          {/* {info.name} */}
+        </h2>
         <span>
-          © All rights are reserved | {new Date().getFullYear()} | Theme by{' '}
+          Copyright &copy; {new Date().getFullYear()} Juan Alejandro Morais — Theme by{' '}
           <a
             href="https://smakosh.com/?ref=portfolio-dev"
             rel="noopener noreferrer"

@@ -1,9 +1,8 @@
 import {Button, Container, Social} from 'Common';
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import dev from 'Static/illustrations/dev.svg';
 import {Header} from 'Theme';
-import {Details, IntroWrapper, Thumbnail, Wrapper} from './styles';
+import {Details, IntroWrapper, Wrapper} from './styles';
 
 const info = require('../../../../data/info');
 

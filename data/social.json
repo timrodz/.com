@@ -1,21 +1,21 @@
 [
   {
     "id": 0,
-    "name": "Twitter",
-    "link": "https://twitter.com/timrodz",
-    "icon": "/icons/twitter.svg"
-  },
-  {
-    "id": 1,
     "name": "Github",
     "link": "https://github.com/timrodz",
     "icon": "/icons/github.svg"
   },
   {
-    "id": 2,
+    "id": 1,
     "name": "LinkedIn",
     "link": "https://www.linkedin.com/in/timrodz/",
     "icon": "/icons/linkedin.svg"
+  },
+  {
+    "id": 2,
+    "name": "Twitter",
+    "link": "https://twitter.com/timrodz",
+    "icon": "/icons/twitter.svg"
   },
   {
     "id": 3,

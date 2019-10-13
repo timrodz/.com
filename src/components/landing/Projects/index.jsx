@@ -1,9 +1,9 @@
+import {Container, Item, ProjectGrid} from 'Common';
+import {graphql, useStaticQuery} from 'gatsby';
 import React from 'react';
-import {useStaticQuery, graphql} from 'gatsby';
-import {Container, Card, Item, ProjectGrid} from 'Common';
-import starIcon from 'Static/icons/star.svg';
 import forkIcon from 'Static/icons/fork.svg';
-import {Wrapper, Content, Stats} from './styles';
+import starIcon from 'Static/icons/star.svg';
+import {Card, Content, Stats, Wrapper} from './styles';
 
 export const Projects = () => {
   const {
@@ -16,7 +16,7 @@ export const Projects = () => {
     {
       github {
         repositoryOwner(login: "timrodz") {
-          repositories(first: 6, orderBy: {field: STARGAZERS, direction: DESC}) {
+          repositories(first: 6, orderBy: {field: PUSHED_AT, direction: DESC}) {
             edges {
               node {
                 id
@@ -38,49 +38,61 @@ export const Projects = () => {
       }
     }
   `);
+
+  const renderRepositoryType = (parent, isFork, stargazers, forkCount) => {
+    return isFork ? (
+      <div>
+        <img src={forkIcon} alt="forks" />
+        <p>{parent.nameWithOwner}</p>
+      </div>
+    ) : (
+      <>
+        <div>
+          <img src={starIcon} alt="stars" />
+          <span>{stargazers.totalCount}</span>
+        </div>
+        <div>
+          <img src={forkIcon} alt="forks" />
+          <span>{forkCount}</span>
+        </div>
+      </>
+    );
+  };
+
   return (
     <Wrapper as={Container} id="projects">
-      <h2>Open Source Work</h2>
+      <h2>Open Source Projects</h2>
       <p>
-        Collaboration is an important key to success — This is why I enjoy contributing to
-        Open Source Software.
+        I am always looking for new ways to learn &amp; improve myself — Contributing to
+        Open Source is a great way of achieving this.
       </p>
       <ProjectGrid>
-        {edges.map(({node: project}) => (
-          <Item
-            key={project.id}
-            as="a"
-            href={project.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Card>
-              <Content>
-                <h4>{project.name}</h4>
-                <p>{project.description}</p>
-              </Content>
-              <Stats>
-                {project.isFork ? (
-                  <div>
-                    <img src={forkIcon} alt="forks" />
-                    <p>{project.parent.nameWithOwner}</p>
-                  </div>
-                ) : (
-                  <React.Fragment>
-                    <div>
-                      <img src={starIcon} alt="stars" />
-                      <span>{project.stargazers.totalCount}</span>
-                    </div>
-                    <div>
-                      <img src={forkIcon} alt="forks" />
-                      <span>{project.forkCount}</span>
-                    </div>
-                  </React.Fragment>
-                )}
-              </Stats>
-            </Card>
-          </Item>
-        ))}
+        {edges.map(({node: project}) => {
+          const {
+            id,
+            url,
+            name,
+            description,
+            isFork,
+            parent,
+            stargazers,
+            forkCount,
+          } = project;
+
+          return (
+            <Item key={id} as="a" href={url} target="_blank" rel="noopener noreferrer">
+              <Card>
+                <Content>
+                  <h4>{name}</h4>
+                  <p>{description}</p>
+                </Content>
+                <Stats>
+                  {renderRepositoryType(parent, isFork, stargazers, forkCount)}
+                </Stats>
+              </Card>
+            </Item>
+          );
+        })}
       </ProjectGrid>
     </Wrapper>
   );

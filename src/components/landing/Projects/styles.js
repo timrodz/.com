@@ -1,5 +1,14 @@
 import styled from 'styled-components';
 
+export const Card = styled.div`
+  padding: 1rem;
+  height: 100%;
+  
+  &:hover h4 {
+    color: ${props => props.theme.secondary};
+  }
+`;
+
 export const Wrapper = styled.div`
   padding: 2rem 0;
 `;

@@ -1,27 +1,25 @@
 module.exports = {
-  defaultTitle: 'Juan Morais',
+  defaultTitle: 'Juan Alejandro Morais',
   logo: 'https://portfolio.smakosh.com/favicon/favicon-512.png',
-  author: 'Juan Morais',
+  author: 'Juan Alejandro Morais',
   url: 'http://timrodz.com',
   legalName: 'Juan Alejandro Rodriguez Morais',
-  defaultDescription: 'I’m Juan and I’m a Game & Data developer!',
+  defaultDescription: 'Personal website for Juan Alejandro Morais (@timrodz), Full-stack developer',
   socialLinks: {
     twitter: 'http://www.twitter.com/timrodz',
     github: 'https://github.com/timrodz',
     linkedin: 'https://www.linkedin.com/in/timrodz',
+    stackoverflow: 'https://stackoverflow.com/users/4329379/juan-morais'
   },
   googleAnalyticsID: 'TODO: FILL ME UP',
   themeColor: '#ff844a',
   backgroundColor: '#26beaf',
   social: {
-    facebook: 'appId',
     twitter: '@timrodz',
   },
   address: {
     city: 'Wellington',
-    region: 'Te Aro',
     country: 'New Zealand',
-    zipCode: '6011',
   },
   contact: {
     email: 'timrodz@icloud.com',

@@ -39,17 +39,13 @@ export const SEO = ({
 		"address": {
 			"@type": "PostalAddress",
 			"addressLocality": "${address.city}",
-			"addressRegion": "${address.region}",
-			"addressCountry": "${address.country}",
-			"postalCode": "${address.zipCode}"
+			"addressCountry": "${address.country}"
 		},
-		"sameAs": [
-			"${socialLinks.twitter}",
-			"${socialLinks.google}",
-			"${socialLinks.youtube}",
-			"${socialLinks.linkedin}",
-			"${socialLinks.instagram}",
+    "sameAs": [
 			"${socialLinks.github}"
+      "${socialLinks.linkedin}",
+      "${socialLinks.twitter}",
+      "${socialLinks.stackoverflow}"
 		]
   	}`;
 
@@ -63,7 +59,6 @@ export const SEO = ({
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={Thumbnail} />
-      <meta property="fb:app_id" content={social.facebook} />
 
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:creator" content={socialLinks.twitter} />

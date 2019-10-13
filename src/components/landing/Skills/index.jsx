@@ -1,8 +1,10 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import { Container, Button } from 'Common';
+import {Container, Button} from 'Common';
 import dev from 'Static/illustrations/skills.svg';
-import { Wrapper, SkillsWrapper, Details, Thumbnail } from './styles';
+import {Wrapper, SkillsWrapper, Details, Thumbnail} from './styles';
+
+const info = require('../../../../data/info');
 
 export const Skills = () => (
   <Wrapper id="about">
@@ -11,12 +13,8 @@ export const Skills = () => (
         <img src={dev} alt="I’m John and I’m a Backend & Devops engineer!" />
       </Thumbnail>
       <Details>
-        <h1>Who is Juan?</h1>
-        <p>
-          I have a passion for game &amp; data development. My mission is to
-          bring agile processes to Data Engineering and Game Development
-          pipelines.
-        </p>
+        <h1>About me</h1>
+        <p>{info.about}</p>
         <Button as={AnchorLink} href="#contact">
           Get in touch
         </Button>

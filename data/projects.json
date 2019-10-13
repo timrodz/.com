@@ -1,16 +1,23 @@
 [
   {
-    "title": "My Project",
-    "slug": "project-1",
-    "url": "https://example.com/",
-    "image": "./images/project1.jpg",
-    "description": "I built this to show off my sweet skills!"
+    "title": "I Am Monster — Game",
+    "slug": "project-i_am_monster",
+    "url": "https://pikpok.com/games/i-am-monster/",
+    "image": "./images/i_am_monster.png",
+    "description": "Unity + Python"
   },
   {
-    "title": "Another Project",
-    "slug": "project-2",
-    "url": "https://example.org/",
-    "image": "./images/project2.jpg",
-    "description": "This one is also good."
+    "title": "El Mandamás — Game",
+    "slug": "project-mandamas",
+    "url": "https://timrodz.itch.io/el-mandamas/",
+    "image": "./images/mandamas.jpg",
+    "description": "Unity"
+  },
+  {
+    "title": "Ink Wars — Game",
+    "slug": "project-ink_wars",
+    "url": "http://inkwarsgame.com/",
+    "image": "./images/inkwars.jpg",
+    "description": "Unity"
   }
 ]
