@@ -234,7 +234,7 @@ export const Global = createGlobalStyle`
       color: inherit;
       font-weight: bold;
       text-rendering: optimizeLegibility;
-      font-size: 1.62671rem;
+      font-size: 1.8rem;
       line-height: 1.1;
     }
     h3 {
@@ -360,6 +360,7 @@ export const Global = createGlobalStyle`
       padding-right: 0;
       padding-top: 0;
       margin-bottom: 1.45rem;
+      color: ${props => props.theme.gray};
     }
     figure {
       margin-left: 0;
