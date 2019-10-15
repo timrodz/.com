@@ -49,6 +49,7 @@ export const Portfolio = () => {
               <Card>
                 <Content>
                   <Image
+                    loading="lazy"
                     fluid={imageData}
                     alt={`${title}: ${description}`}
                     style={imageStyle}

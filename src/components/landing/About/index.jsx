@@ -9,7 +9,7 @@ export const About = () => (
   <Wrapper id="about">
     <AboutWrapper as={Container}>
       <Thumbnail>
-        <img src={about} alt={info.about} />
+        <img loading="lazy" src={about} alt={info.about} />
       </Thumbnail>
       <Details>
         <h1>About me</h1>

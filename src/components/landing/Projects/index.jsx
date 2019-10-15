@@ -44,17 +44,17 @@ export const Projects = () => {
   const renderRepositoryType = (parent, isFork, stargazers, forkCount) => {
     return isFork ? (
       <div>
-        <img src={forkIcon} alt="forks" />
+        <img loading="lazy" src={forkIcon} alt="forks" />
         <p>{parent.nameWithOwner}</p>
       </div>
     ) : (
       <>
         <div>
-          <img src={starIcon} alt="stars" />
+          <img loading="lazy" src={starIcon} alt="stars" />
           <span>{stargazers.totalCount}</span>
         </div>
         <div>
-          <img src={forkIcon} alt="forks" />
+          <img loading="lazy" src={forkIcon} alt="forks" />
           <span>{forkCount}</span>
         </div>
       </>
