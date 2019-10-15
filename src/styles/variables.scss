@@ -1,17 +1,15 @@
 // Theme mains
 $primary: #1ba39c;
-$secondary: #14837e;
+$secondary: #14847f;
 
 // Basic colours
 $white: #fff;
-$transparent: rgba(0, 0, 0, 0.11);
 $black: #0d1321;
 $gray: #707070;
+$transparent: rgba(0, 0, 0, 0.11);
 $contact-error: #ff4136;
 
 // Decorators
 $cta-hover: darken($primary, 2%);
 $border: 2px solid $secondary;
-$item-shadow: 0 0 5px 0px $transparent;
-$svg-main: $secondary;
-$svg-light: #e0f2e9;
+$item-shadow: 0 2px 4px 0px $transparent;
