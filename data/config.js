@@ -24,6 +24,5 @@ module.exports = {
   contact: {
     email: 'timrodz@icloud.com',
   },
-  foundingDate: '2019',
-  recaptcha_key: 'TODO: FILL ME UP',
+  foundingDate: '2019'
 };
