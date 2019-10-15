@@ -33,7 +33,6 @@ export const SEO = ({
 		"contactPoint": [{
 			"@type": "ContactPoint",
 			"email": "${contact.email}",
-			"telephone": "${contact.phone}",
 			"contactType": "customer service"
 		}],
 		"address": {
@@ -42,7 +41,7 @@ export const SEO = ({
 			"addressCountry": "${address.country}"
 		},
     "sameAs": [
-			"${socialLinks.github}"
+			"${socialLinks.github}",
       "${socialLinks.linkedin}",
       "${socialLinks.twitter}",
       "${socialLinks.stackoverflow}"
