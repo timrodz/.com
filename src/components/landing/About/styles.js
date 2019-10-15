@@ -1,13 +1,12 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  background-image: url('../illustrations/details.svg');
   background-size: contain;
   background-position: left top;
   background-repeat: no-repeat;
 `;
 
-export const SkillsWrapper = styled.div`
+export const AboutWrapper = styled.div`
   padding: 4rem 0;
   display: flex;
   align-items: center;
@@ -38,7 +37,6 @@ export const Details = styled.div`
     font-size: 20pt;
     font-weight: normal;
     line-height: 1.3;
-    color: ${props => props.theme.gray};
   }
 `;
 

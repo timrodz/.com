@@ -3,7 +3,7 @@ import { Layout, SEO } from 'Common';
 import { ThemeProvider } from 'styled-components';
 import {
   Intro,
-  Skills,
+  About,
   Projects,
   Portfolio,
 } from 'Components/landing';
@@ -17,7 +17,7 @@ export default () => (
       <Intro />
       <Portfolio />
       <Projects />
-      <Skills />
+      <About />
     </Layout>
   </ThemeProvider>
 );
