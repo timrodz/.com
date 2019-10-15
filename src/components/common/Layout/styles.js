@@ -64,7 +64,7 @@ export const Global = createGlobalStyle`
     }
     mark {
       background-color: #ff0;
-      color: ${props => props.theme.black};
+      color: #0d1321;
     }
     small {
       font-size: 80%;
@@ -360,7 +360,7 @@ export const Global = createGlobalStyle`
       padding-right: 0;
       padding-top: 0;
       margin-bottom: 1.45rem;
-      color: ${props => props.theme.gray};
+      color: #707070;
     }
     figure {
       margin-left: 0;
