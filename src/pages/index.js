@@ -4,7 +4,6 @@ import { ThemeProvider } from 'styled-components';
 import {
   Intro,
   Skills,
-  Contact,
   Projects,
   Portfolio,
 } from 'Components/landing';
@@ -19,7 +18,6 @@ export default () => (
       <Portfolio />
       <Projects />
       <Skills />
-      <Contact />
     </Layout>
   </ThemeProvider>
 );
