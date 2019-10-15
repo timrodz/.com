@@ -12,8 +12,8 @@ module.exports = {
     stackoverflow: 'https://stackoverflow.com/users/4329379/juan-morais'
   },
   googleAnalyticsID: 'TODO: FILL ME UP',
-  themeColor: '#ff844a',
-  backgroundColor: '#26beaf',
+  themeColor: '#14847f',
+  backgroundColor: '#fff',
   social: {
     twitter: '@timrodz',
   },
