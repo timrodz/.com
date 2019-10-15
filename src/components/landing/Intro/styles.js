@@ -40,24 +40,12 @@ export const Details = styled.div`
 
   h4 {
     margin-bottom: 2.5rem;
-    font-size: 32pt;
+    font-size: 28pt;
     font-weight: normal;
     color: ${props => props.theme.gray};
 
     @media (max-width: 680px) {
       font-size: 26pt;
     }
-  }
-`;
-
-export const Thumbnail = styled.div`
-  flex: 1;
-
-  @media (max-width: 960px) {
-    width: 100%;
-  }
-
-  img {
-    width: 100%;
   }
 `;

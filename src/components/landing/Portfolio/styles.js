@@ -10,7 +10,7 @@ export const Card = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  padding: 2rem 0;
+  padding: 3rem 0 4rem 0;
 `;
 
 export const Content = styled.div`

@@ -5,6 +5,8 @@ import forkIcon from 'Static/icons/fork.svg';
 import starIcon from 'Static/icons/star.svg';
 import {Card, Content, Stats, Wrapper} from './styles';
 
+const info = require('../../../../data/info');
+
 export const Projects = () => {
   const {
     github: {
@@ -62,10 +64,7 @@ export const Projects = () => {
   return (
     <Wrapper as={Container} id="projects">
       <h2>Open Source Projects</h2>
-      <p>
-        I am always looking for new ways to learn &amp; improve myself — Contributing to
-        Open Source is a great way of achieving this.
-      </p>
+      <p>{info.projects}</p>
       <ProjectGrid>
         {edges.map(({node: project}) => {
           const {
