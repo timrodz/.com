@@ -21,7 +21,7 @@
     "id": 3,
     "name": "DEV",
     "link": "https://dev.to/timrodz",
-    "icon": "https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
+    "icon": "/icons/dev.svg"
   },
   {
     "id": 4,
