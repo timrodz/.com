@@ -1,15 +1,10 @@
-// Theme mains
-$primary: #1ba39c;
-$secondary: #14847f;
-
-// Basic colours
-$white: #fff;
-$black: #0d1321;
+$white: #ffffff;
+$light: #d4f8f3;
+$bright: #85eee2;
+$medium: #0e9f96;
+$dark: #0c6561;
+$black: #03040b;
 $gray: #707070;
 $transparent: rgba(0, 0, 0, 0.11);
-$contact-error: #ff4136;
-
-// Decorators
-$cta-hover: darken($primary, 2%);
-$border: 2px solid $secondary;
-$item-shadow: 0 2px 4px 0px $transparent;
+$body: #fbfbfb;
+$shadow: 0 2px 4px 0px $transparent;

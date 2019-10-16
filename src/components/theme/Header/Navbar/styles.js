@@ -7,10 +7,10 @@ export const Wrapper = styled.div`
   justify-content: space-between;
 
   a {
-    color: ${props => props.theme.black};
+    color: ${props => props.theme.dark};
   }
 
   a:hover {
-    color: ${props => props.theme.secondary};
+    color: ${props => props.theme.black};
   }
 `;
