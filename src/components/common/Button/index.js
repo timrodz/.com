@@ -12,13 +12,14 @@ export const Button = styled.button`
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 500;
-  color: ${props => props.theme.white};
-  background: ${props => props.theme.primary};
+  color: ${props => props.theme.dark};
+  background: ${props => props.theme.light};
   
   &:hover {
-    background: ${props => props.theme.ctaHover};
+    color: ${props => props.theme.light};
+    background: ${props => props.theme.dark};
   }
 
   &:focus {
@@ -32,6 +33,12 @@ export const Button = styled.button`
   ${({ secondary }) =>
     secondary &&
     `
-		background: #fff;
+    color: #0c6561;
+		background: #d4f8f3;
+    
+    &:hover {
+    color: #d4f8f3;
+    background: #0c6561;
+  }
 	`}
 `;

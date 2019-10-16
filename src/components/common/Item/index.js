@@ -4,7 +4,7 @@ export const Item = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
-  box-shadow: ${props => props.theme.itemShadow};
+  box-shadow: ${props => props.theme.shadow};
   border-radius: 5px;
 
   h4 {

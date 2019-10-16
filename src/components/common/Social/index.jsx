@@ -12,7 +12,7 @@ export const Social = () => (
         rel="noopener noreferrer"
         aria-label={`Connect with me on ${name}`}
       >
-        <img loading="lazy" width="28" src={icon} alt={`Connect with me on ${name}`} />
+        <img loading="lazy" width="30" src={icon} alt={`Connect with me on ${name}`} />
       </a>
     ))}
   </Wrapper>

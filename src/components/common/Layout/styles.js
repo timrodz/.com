@@ -601,6 +601,7 @@ export const Global = createGlobalStyle`
       }
     }
     body {
+      background-color: #fbfbfb;
       margin: 0;
       padding: 0;
       font-family: 'Inter', Helvetica, sans-serif;
