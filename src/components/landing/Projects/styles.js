@@ -3,9 +3,10 @@ import styled from 'styled-components';
 export const Card = styled.div`
   padding: 1rem;
   height: 100%;
+  background-color: ${props => props.theme.white};
   
   &:hover h4 {
-    color: ${props => props.theme.secondary};
+    color: ${props => props.theme.medium};
   }
 `;
 
@@ -15,11 +16,7 @@ export const Wrapper = styled.div`
 
 export const Content = styled.div`
   padding: 1rem 0;
-  height: 7.5rem;
-  
-  @media (max-width: 960px) {
-    height: 50%;
-  }
+  height: 8rem;
 `;
 
 export const Stats = styled.div`

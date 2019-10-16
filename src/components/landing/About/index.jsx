@@ -14,7 +14,7 @@ export const About = () => (
       <Details>
         <h1>About me</h1>
         <p>{info.about}</p>
-        <Button as="a" href="mailto:timrodz@icloud.com">
+        <Button secondary as="a" href="mailto:timrodz@icloud.com">
           Get in touch
         </Button>
       </Details>
