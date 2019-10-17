@@ -1,6 +1,6 @@
 module.exports = {
   defaultTitle: 'Juan Alejandro Morais',
-  logo: 'https://portfolio.smakosh.com/favicon/favicon-512.png',
+  logo: '../static/favicon/favicon-512.png',
   author: 'Juan Alejandro Morais',
   url: 'http://timrodz.com',
   legalName: 'Juan Alejandro Rodriguez Morais',
