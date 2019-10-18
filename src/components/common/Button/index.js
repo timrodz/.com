@@ -18,8 +18,7 @@ export const Button = styled.button`
   background: ${props => props.theme.light};
   
   &:hover {
-    color: ${props => props.theme.light};
-    background: ${props => props.theme.dark};
+    background: ${props => props.theme.hover};
   }
 
   &:focus {
@@ -33,12 +32,11 @@ export const Button = styled.button`
   ${({ secondary }) =>
     secondary &&
     `
-    color: #0c6561;
-		background: #d4f8f3;
+    color: #03040b;
+		background: #85eee2;
     
     &:hover {
-    color: #d4f8f3;
-    background: #0c6561;
-  }
+      background: #75e4d7;
+    }
 	`}
 `;
