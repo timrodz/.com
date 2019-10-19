@@ -1,6 +1,6 @@
 module.exports = {
   defaultTitle: 'Juan Alejandro Morais',
-  logo: '../static/favicon/favicon-512.png',
+  logo: '../static/favicon/favicon.png',
   author: 'Juan Alejandro Morais',
   url: 'http://timrodz.com',
   legalName: 'Juan Alejandro Rodriguez Morais',
@@ -11,8 +11,8 @@ module.exports = {
     linkedin: 'https://www.linkedin.com/in/timrodz',
     stackoverflow: 'https://stackoverflow.com/users/4329379/juan-morais'
   },
-  googleAnalyticsID: 'TODO: FILL ME UP',
-  themeColor: '#14847f',
+  googleAnalyticsID: '52663114',
+  themeColor: '#0e9f96',
   backgroundColor: '#fff',
   social: {
     twitter: '@timrodz',

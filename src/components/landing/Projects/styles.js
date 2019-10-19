@@ -6,7 +6,7 @@ export const Card = styled.div`
   background-color: ${props => props.theme.white};
   
   &:hover h4 {
-    color: ${props => props.theme.medium};
+    color: ${props => props.theme.dark};
   }
 `;
 

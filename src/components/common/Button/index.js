@@ -14,7 +14,7 @@ export const Button = styled.button`
   user-select: none;
   font-size: 1.2rem;
   font-weight: 500;
-  color: ${props => props.theme.dark};
+  color: ${props => props.theme.darker};
   background: ${props => props.theme.light};
   
   &:hover {
@@ -32,11 +32,11 @@ export const Button = styled.button`
   ${({ secondary }) =>
     secondary &&
     `
-    color: #03040b;
+    color: #064b47;
 		background: #85eee2;
     
     &:hover {
-      background: #75e4d7;
+      background: #7de7db;
     }
 	`}
 `;

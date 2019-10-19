@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
 `;
 
 export const IntroWrapper = styled.div`
-  padding: 10rem 0;
+  padding: 12rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -38,10 +38,10 @@ export const Details = styled.div`
   }
 
   h4 {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.75rem;
     font-size: 32pt;
     font-weight: 500;
-    color: ${props => props.theme.dark};
+    color: ${props => props.theme.darker};
 
     @media (max-width: 680px) {
       font-size: 26pt;

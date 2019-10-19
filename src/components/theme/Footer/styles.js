@@ -30,6 +30,6 @@ export const Details = styled.div`
   }
   
   a {
-    color: ${props => props.theme.medium};
+    color: ${props => props.theme.dark};
   }
 `;
