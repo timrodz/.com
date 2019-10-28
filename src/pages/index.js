@@ -1,14 +1,23 @@
-import React from 'react'
-import { Layout, SEO } from 'Common'
-import { Intro, Skills, Contact, Projects, Portfolio } from 'Components/landing'
+import React from 'react';
+import { Layout, SEO } from 'Common';
+import { ThemeProvider } from 'styled-components';
+import {
+  Intro,
+  About,
+  Projects,
+  Portfolio,
+} from 'Components/landing';
+
+const theme = require('sass-extract-loader?{"plugins":["sass-extract-js"]}!../styles/variables.scss');
 
 export default () => (
-	<Layout>
-		<SEO />
-		<Intro />
-		<Portfolio />
-		<Projects />
-		<Skills />
-		<Contact />
-	</Layout>
-)
+  <ThemeProvider theme={theme}>
+    <Layout>
+      <SEO />
+      <Intro />
+      <Portfolio />
+      <Projects />
+      <About />
+    </Layout>
+  </ThemeProvider>
+);

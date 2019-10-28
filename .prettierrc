@@ -1,6 +1,10 @@
 {
   "semi": true,
+  "printWidth": 90,
+  "bracketSpacing": false,
   "singleQuote": true,
   "trailingComma": "es5",
-  "jsxSingleQuote": false
+  "jsxSingleQuote": false,
+  "tabWidth": 2,
+  "endOfLine": "crlf"
 }

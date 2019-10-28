@@ -1,8 +1,8 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 export const Global = createGlobalStyle`
   html {
-    font-family: 'Roboto', Helvetica, sans-serif;
+    font-family: 'Inter', Helvetica, sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 
@@ -64,7 +64,7 @@ export const Global = createGlobalStyle`
     }
     mark {
       background-color: #ff0;
-      color: #000;
+      color: #0d1321;
     }
     small {
       font-size: 80%;
@@ -234,7 +234,7 @@ export const Global = createGlobalStyle`
       color: inherit;
       font-weight: bold;
       text-rendering: optimizeLegibility;
-      font-size: 1.62671rem;
+      font-size: 1.8rem;
       line-height: 1.1;
     }
     h3 {
@@ -360,6 +360,7 @@ export const Global = createGlobalStyle`
       padding-right: 0;
       padding-top: 0;
       margin-bottom: 1.45rem;
+      color: #707070;
     }
     figure {
       margin-left: 0;
@@ -571,7 +572,7 @@ export const Global = createGlobalStyle`
     code {
       background-color: hsla(0, 0%, 0%, 0.04);
       border-radius: 3px;
-      font-family: 'SFMono-Regular', Consolas, 'Roboto Mono', 'Droid Sans Mono',
+      font-family: 'SFMono-Regular', Consolas, 'Droid Sans Mono',
         'Liberation Mono', Menlo, Courier, monospace;
       padding: 0;
       padding-top: 0.2em;
@@ -600,9 +601,10 @@ export const Global = createGlobalStyle`
       }
     }
     body {
+      background-color: #fbfbfb;
       margin: 0;
       padding: 0;
-      font-family: 'Roboto', Helvetica, sans-serif;
+      font-family: 'Inter', Helvetica, sans-serif;
       color: hsla(0, 0%, 0%, 0.8);
       font-weight: normal;
       word-wrap: break-word;
@@ -623,4 +625,4 @@ export const Global = createGlobalStyle`
       }
     }
   }
-`
+`;

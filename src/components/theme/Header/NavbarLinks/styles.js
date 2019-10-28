@@ -1,37 +1,42 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-	a {
-		color: #6d6d6d;
-		text-decoration: none;
-	}
+  margin-top: 1rem;
+  
+  a {
+    color: ${props => props.theme.dark};
+  }
 
-	${({ desktop }) =>
-		desktop
-			? `
-			@media (max-width: 960px) {
-					display: none;
-			}
+  a:hover {
+    color: ${props => props.theme.black};
+  }
 
-			a {
-					margin-right: 1rem;
+  ${({ desktop }) =>
+    desktop
+      ? `
+      margin-top: 0;
+      @media (max-width: 960px) {
+        display: none;
+      }
 
-					&:last-child {
-							margin-right: unset;
-					}
-			}
-		`
-			: `
-			padding: 3rem;
-			display: flex;
-			flex-direction: column;
+      a {
+        margin-right: 1rem;
+        font-size: 12pt;
+        &:last-child {
+          margin-right: unset;
+        }
+      }
+      `
+      : `
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
 
-			a {
-					margin-bottom: 1rem;
-
-					&:last-child {
-							margin-bottom: unset;
-					}
-			}
-	`}
-`
+      a {
+        margin-bottom: 1rem;
+        &:last-child {
+          margin-bottom: unset;
+        }
+      }
+    `}
+`;
