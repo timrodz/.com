@@ -13,3 +13,9 @@ export const Wrapper = styled.div`
     }
   }
 `;
+
+export const Image = styled.img``;
+
+// background-color: red;
+// -webkit-mask: url(${props => props.icon}) no-repeat center;
+// mask: url(${props => props.icon}) no-repeat center;

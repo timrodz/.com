@@ -1,13 +1,8 @@
 import styled from 'styled-components';
+import {Card as c} from '../../common/Card';
 
-export const Card = styled.div`
+export const Card = styled(c)`
   padding: 0rem 1rem 1rem 1rem;
-  height: 100%;
-  background-color: ${props => props.theme.white};
-  
-  &:hover h4 {
-    color: ${props => props.theme.dark};
-  }
 `;
 
 export const Wrapper = styled.div`

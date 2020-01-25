@@ -15,10 +15,10 @@ export const Button = styled.button`
   font-size: 1.2rem;
   font-weight: 500;
   color: ${props => props.theme.darker};
-  background: ${props => props.theme.light};
-  
+  background: ${props => props.theme.white};
+
   &:hover {
-    background: ${props => props.theme.hover};
+    background: ${props => props.theme.light};
   }
 
   &:focus {
@@ -29,14 +29,14 @@ export const Button = styled.button`
     background: ${props => props.theme.gray};
   }
 
-  ${({ secondary }) =>
+  ${({secondary}) =>
     secondary &&
     `
-    color: #064b47;
-		background: #85eee2;
+    color: #fff;
+		background: #0c6561;
     
     &:hover {
-      background: #7de7db;
+      background: #064b47;
     }
 	`}
 `;

@@ -1,15 +1,5 @@
 import styled from 'styled-components';
 
-export const Card = styled.div`
-  padding: 1rem;
-  height: 100%;
-  background-color: ${props => props.theme.white};
-  
-  &:hover h4 {
-    color: ${props => props.theme.dark};
-  }
-`;
-
 export const Wrapper = styled.div`
   padding: 4rem 0;
 `;
@@ -23,13 +13,13 @@ export const Stats = styled.div`
   display: flex;
   align-items: center;
   position: relative;
-  
+
   div {
     display: flex;
     &:first-child {
       margin-right: 0.5rem;
     }
-    
+
     p {
       margin: 0 0 0 0.5rem;
     }

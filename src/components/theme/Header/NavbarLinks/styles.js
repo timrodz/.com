@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   margin-top: 1rem;
-  
+
   a {
     color: ${props => props.theme.dark};
   }
@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
     color: ${props => props.theme.black};
   }
 
-  ${({ desktop }) =>
+  ${({desktop}) =>
     desktop
       ? `
       margin-top: 0;
@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
       }
 
       a {
-        margin-right: 1rem;
+        margin-right: 1.25rem;
         font-size: 12pt;
         &:last-child {
           margin-right: unset;

@@ -36,32 +36,37 @@ export const Portfolio = () => {
     }
   `);
 
+  const renderPortfolio = () => {
+    if (!edges || edges.length === 0) return null;
+
+    return edges.map(({node: project}) => {
+      const {id, url, title, description, image} = project;
+      const imageData = image.childImageSharp.fluid;
+
+      return (
+        <Item key={id} as="a" href={url} target="_blank" rel="noopener noreferrer">
+          <Card>
+            <Content>
+              <Image
+                loading="lazy"
+                fluid={imageData}
+                alt={`${title}: ${description}`}
+                style={imageStyle}
+              />
+              <h4>{title}</h4>
+              <p>{description}</p>
+            </Content>
+          </Card>
+        </Item>
+      );
+    });
+  };
+
   return (
     <Wrapper as={Container} id="portfolio">
       <h2>Portfolio</h2>
       <p>{info.portfolio}</p>
-      <ProjectGrid>
-        {edges.map(({node: project}) => {
-          const {id, url, title, description, image} = project;
-          const imageData = image.childImageSharp.fluid;
-          return (
-            <Item key={id} as="a" href={url} target="_blank" rel="noopener noreferrer">
-              <Card>
-                <Content>
-                  <Image
-                    loading="lazy"
-                    fluid={imageData}
-                    alt={`${title}: ${description}`}
-                    style={imageStyle}
-                  />
-                  <h4>{title}</h4>
-                  <p>{description}</p>
-                </Content>
-              </Card>
-            </Item>
-          );
-        })}
-      </ProjectGrid>
+      <ProjectGrid>{renderPortfolio()}</ProjectGrid>
     </Wrapper>
   );
 };
