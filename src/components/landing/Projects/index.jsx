@@ -71,11 +71,11 @@ export const Projects = () => {
       <>
         <div>
           <img loading="lazy" src={starIcon} alt="stars" />
-          <span>{stargazers.totalCount}</span>
+          <span>{stargazers.totalCount + 1}</span>
         </div>
         <div>
           <img loading="lazy" src={forkIcon} alt="forks" />
-          <span>{forkCount}</span>
+          <span>{forkCount + 1}</span>
         </div>
       </>
     );
