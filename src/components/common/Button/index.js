@@ -14,11 +14,12 @@ export const Button = styled.button`
   user-select: none;
   font-size: 1.2rem;
   font-weight: 500;
-  color: ${props => props.theme.darker};
+  color: ${props => props.theme.dark};
   background: ${props => props.theme.white};
 
   &:hover {
-    background: ${props => props.theme.light};
+    color: ${props => props.theme.darker};
+    background: ${props => props.theme.hover};
   }
 
   &:focus {
