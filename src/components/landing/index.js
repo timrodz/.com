@@ -1,5 +1,5 @@
 export * from './Intro';
 export * from './Portfolio';
-export * from './Projects';
+export * from './GithubProjects';
 export * from './Posts';
 export * from './About';

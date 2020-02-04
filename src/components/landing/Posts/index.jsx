@@ -52,7 +52,7 @@ export const Posts = () => {
 
   return (
     <Wrapper as={Container} id="posts">
-      <h2>Blog Posts</h2>
+      <h2>Posts</h2>
       <p>{info.posts}</p>
       <ProjectGrid>{renderPosts()}</ProjectGrid>
     </Wrapper>

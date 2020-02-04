@@ -8,7 +8,11 @@ export const Footer = () => (
       <Details>
         <h2>Thank you for visiting!</h2>
         <span>
-          Copyright &copy; {new Date().getFullYear()} Juan Alejandro Morais — Theme by{' '}
+          Copyright &copy; {new Date().getFullYear()} Juan Alejandro Morais — Built with{' '}
+          <a href="https://www.gatsbyjs.org/" rel="noopener noreferrer" target="_blank">
+            Gatsby
+          </a>{' '}
+          — Credits to{' '}
           <a
             href="https://smakosh.com/?ref=portfolio-dev"
             rel="noopener noreferrer"

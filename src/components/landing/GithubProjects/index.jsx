@@ -7,7 +7,7 @@ import {Content, Stats, Wrapper} from './styles';
 
 const info = require('../../../../data/info');
 
-export const Projects = () => {
+export const GithubProjects = () => {
   const {
     github: {
       repositoryOwner: {
@@ -83,7 +83,7 @@ export const Projects = () => {
 
   return (
     <Wrapper as={Container} id="projects">
-      <h2>Open Source</h2>
+      <h2>Projects</h2>
       <p>{info.projects}</p>
       <ProjectGrid>{renderProjects()}</ProjectGrid>
     </Wrapper>

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   margin-top: 1rem;
+  font-size: 1rem;
 
   a {
     color: ${props => props.theme.dark};
@@ -21,7 +22,7 @@ export const Wrapper = styled.div`
 
       a {
         margin-right: 1.25rem;
-        font-size: 12pt;
+        font-size: 1.25rem;
         &:last-child {
           margin-right: unset;
         }

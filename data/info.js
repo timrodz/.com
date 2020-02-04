@@ -1,13 +1,13 @@
 module.exports = {
   name: 'Juan Alejandro Morais',
-  title: 'Full Stack Data Developer',
+  title: 'Full Stack Data Engineer',
   portfolio:
-    'My background as a game developer has empowered my programming career — I am always up for a challenge, no matter the stack.',
+    'I have professional experience building Full Stack & Web Applications and Games — I embrace the challenge, independent of stack.',
   projects:
-    'I am always looking for new ways to learn & improve my skills — Contributing to Open Source is a great way of achieving this.',
+    'What am I working on? Here is my latest activity on Github, which involves personal, open source, and freelance projects.',
   posts:
-    'I am passionate about sharing my knowledge with others — This is how I discovered the art of writing.',
+    'I love sharing my knowledge with others. My content is centered around an audience starting with Web Technologies and Game Development.',
   about:
-    'I am a Software Engineer with professional experience in Full Stack App Design + Development, Database Creation + Management, Data Visualization & Game Development. I love sharing knowledge with others, and I do so through Public Speaking and Writing Blogs.',
+    'I am a Software Engineer and a strong advocate for success as the product of great leadership, mentorship, team work, and active collaboration — This is what you can expect from me. I specialize in building Full Stack Applications that help businesses and individuals fullfil their dreams and reach their goals. My front-end (JS) stack encompasses Gatsby, React, and GraphQL. For back-end (Python) I work with Flask, Pandas, Celery, AWS, and SQL.',
   maxPostsToShow: 3,
 };
