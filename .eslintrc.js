@@ -9,12 +9,7 @@ module.exports = {
     es6: true,
     node: true,
   },
-  extends: [
-    'airbnb',
-    'prettier',
-    'eslint:recommended',
-    'plugin:react/recommended',
-  ],
+  extends: ['airbnb', 'prettier', 'eslint:recommended', 'plugin:react/recommended'],
   plugins: ['react', 'jsx-a11y', 'import', 'react-hooks'],
   rules: {
     'no-console': 'error',
@@ -62,7 +57,7 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react/jsx-curly-brace-presence': 0,
-    'react/jsx-boolean-value': 0
+    'react/jsx-boolean-value': 0,
   },
   globals: {
     fetch: 'writable',

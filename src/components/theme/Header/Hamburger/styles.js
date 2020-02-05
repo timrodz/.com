@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
     display: block;
   }
 
-  ${({ sidebar }) =>
+  ${({sidebar}) =>
     sidebar &&
     `
 			right: 18%;
@@ -43,7 +43,7 @@ export const Bar = styled.div`
 		width: 1.6rem;
 	}
 
-	${({ top, sidebar }) =>
+	${({top, sidebar}) =>
     top &&
     sidebar &&
     `
@@ -51,7 +51,7 @@ export const Bar = styled.div`
 		transform: translateY(8px) rotate(-135deg);
 	`}
 
-	${({ mid, sidebar }) =>
+	${({mid, sidebar}) =>
     mid &&
     sidebar &&
     `
@@ -59,7 +59,7 @@ export const Bar = styled.div`
 		transform: scale(0);
 	`}
 
-	${({ bottom, sidebar }) =>
+	${({bottom, sidebar}) =>
     bottom &&
     sidebar &&
     `
