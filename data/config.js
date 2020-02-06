@@ -2,10 +2,10 @@ module.exports = {
   defaultTitle: 'Juan Alejandro Morais',
   logo: '../static/favicon/favicon.png',
   author: 'Juan Alejandro Morais',
-  url: 'http://timrodz.com',
+  url: 'https://www.timrodz.com',
   legalName: 'Juan Alejandro Rodriguez Morais',
   defaultDescription:
-    'Personal website for Juan Alejandro Morais (@timrodz), Full-stack developer',
+    'Portfolio of Juan Alejandro Morais, Full Stack Data Engineer.',
   socialLinks: {
     twitter: 'http://www.twitter.com/timrodz',
     github: 'https://github.com/timrodz',
