@@ -1,6 +1,6 @@
-import React from 'react';
 import social from 'Data/social';
-import {Wrapper, Image} from './styles';
+import React from 'react';
+import {Image, Wrapper} from './styles';
 
 export const Social = () => (
   <Wrapper>
@@ -13,7 +13,7 @@ export const Social = () => (
           rel="noopener noreferrer"
           aria-label={`Connect with me on ${name}`}
         >
-          <Image
+          <img
             loading="lazy"
             width="30"
             height="30"
