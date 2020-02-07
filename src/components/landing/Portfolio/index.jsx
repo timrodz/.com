@@ -42,6 +42,7 @@ export const Portfolio = () => {
     return edges.map(({node: project}) => {
       const {id, url, title, description, image} = project;
       const imageData = image.childImageSharp.fluid;
+      console.log(`Portfolio: ${JSON.stringify(imageData)}`);
 
       return (
         <Item key={id} as="a" href={url} target="_blank" rel="noopener noreferrer">

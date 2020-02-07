@@ -1,16 +1,10 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  background-size: contain;
-  background-position: left top;
-  background-repeat: no-repeat;
-`;
-
-export const AboutWrapper = styled.div`
   padding: 4rem 0 1rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
   @media (max-width: 960px) {
     padding: 2rem 0;
@@ -33,28 +27,19 @@ export const Details = styled.div`
   }
 `;
 
-export const Thumbnail = styled.div`
+export const ImageCenterer = styled.div`
+  margin: 0 15%;
+
+  @media (orientation: portrait) and (max-width: 960px) {
+    margin: 0;
+  }
+`;
+
+export const ImageContainer = styled.div`
   flex: 1;
+  width: 100%;
+  height: 100%;
+
   margin-top: 1rem;
-
-  img {
-    width: 75%;
-  }
-
-  @media (max-width: 960px) {
-    width: 100%;
-    margin-bottom: 0.5rem;
-  }
-
-  @media (orientation: portrait) {
-    img {
-      width: 100%;
-    }
-  }
-
-  @media (orientation: landscape) {
-    img {
-      transform: translate(15%);
-    }
-  }
+  margin-bottom: 1.5rem;
 `;

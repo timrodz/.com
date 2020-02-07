@@ -13,17 +13,19 @@ export const Wrapper = styled.div`
 
 export const IntroWrapper = styled.div`
   @media (orientation: landscape) and (max-width: 960px) {
-    margin-top: 3rem;
+    margin-top: 3.5rem;
   }
 `;
 
 export const Details = styled.div`
   flex: 1;
-  margin-left: 25%;
+
+  @media (orientation: landscape) and (min-width: 1024px) {
+    margin-left: 15%;
+  }
 
   @media (max-width: 960px) {
     width: 100%;
-    margin-left: 0%;
     margin-bottom: 2rem;
   }
 
@@ -31,7 +33,6 @@ export const Details = styled.div`
     margin-bottom: 2rem;
     font-size: 3.5rem;
     color: ${props => props.theme.darker};
-    font-weight: 700;
 
     @media (max-width: 680px) {
       font-size: 1.8rem;

@@ -1,23 +1,56 @@
+import {Button, Container} from 'Common';
+import {graphql, useStaticQuery} from 'gatsby';
+import Image from 'gatsby-image';
 import React from 'react';
-import {Container, Button} from 'Common';
-import {Wrapper, AboutWrapper, Details, Thumbnail} from './styles';
+import {Details, ImageContainer, ImageCenterer, Wrapper} from './styles';
 
-const info = require('../../../../data/info');
-const me = require('../../../../data/images/me.png');
 const info = require('Data/info');
 
-export const About = () => (
-  <Wrapper id="about">
-    <AboutWrapper as={Container}>
-      <Thumbnail>
-        <a
-          href="https://www.linkedin.com/in/timrodz/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img loading="lazy" src={me} alt={info.about} />
-        </a>
-      </Thumbnail>
+export const About = () => {
+  const {
+    allImageSharp: {edges},
+  } = useStaticQuery(graphql`
+    {
+      allImageSharp(filter: {original: {src: {regex: "/(me)/"}}}) {
+        edges {
+          node {
+            id
+            original {
+              src
+            }
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const Img = () => {
+    console.log(edges);
+
+    return edges.map(({node: image}) => {
+      const id = image.id;
+      const fluid = image.fluid;
+      console.log(`About: ${JSON.stringify(fluid)}`);
+      return <Image key={id} fluid={fluid} />;
+    });
+  };
+
+  return (
+    <Wrapper id="about" as={Container}>
+      <ImageContainer>
+        <ImageCenterer>
+          <a
+            href="https://www.linkedin.com/in/timrodz/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {Img()}
+          </a>
+        </ImageCenterer>
+      </ImageContainer>
       <Details>
         <h1>About me</h1>
         <p>{info.about}</p>
@@ -25,6 +58,6 @@ export const About = () => (
           Let's work together!
         </Button>
       </Details>
-    </AboutWrapper>
-  </Wrapper>
-);
+    </Wrapper>
+  );
+};
