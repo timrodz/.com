@@ -1,5 +1,5 @@
 import React from 'react';
-import social from '../../../../data/social.json';
+import social from 'Data/social';
 import {Wrapper, Image} from './styles';
 
 export const Social = () => (
@@ -16,6 +16,7 @@ export const Social = () => (
           <Image
             loading="lazy"
             width="30"
+            height="30"
             src={icon}
             alt={`Connect with me on ${name}`}
           />

@@ -5,7 +5,7 @@ import forkIcon from 'Static/icons/fork.svg';
 import starIcon from 'Static/icons/star.svg';
 import {Content, Stats, Wrapper} from './styles';
 
-const info = require('../../../../data/info');
+const info = require('Data/info');
 
 export const GithubProjects = () => {
   const {

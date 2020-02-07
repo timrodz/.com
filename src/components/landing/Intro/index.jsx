@@ -4,7 +4,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {Header} from 'Theme';
 import {Details, IntroWrapper, Wrapper} from './styles';
 
-const info = require('../../../../data/info');
+const info = require('Data/info');
 
 export const Intro = () => (
   <>

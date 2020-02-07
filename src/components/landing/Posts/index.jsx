@@ -3,7 +3,7 @@ import React, {useEffect, useState} from 'react';
 import {Card, Content, Wrapper} from '../Portfolio/styles';
 import {Image, ImageWrapper} from './styles';
 
-const info = require('../../../../data/info');
+const info = require('Data/info');
 const fetchUrl = 'https://dev.to/api/articles?username=timrodz';
 
 export const Posts = () => {

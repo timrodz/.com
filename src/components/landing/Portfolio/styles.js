@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import {Card as c} from '../../common/Card';
+import {Card as card} from 'Common/Card';
 
-export const Card = styled(c)`
+export const Card = styled(card)`
   padding: 0rem 1rem 1rem 1rem;
 `;
 

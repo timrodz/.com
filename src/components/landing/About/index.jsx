@@ -4,6 +4,7 @@ import {Wrapper, AboutWrapper, Details, Thumbnail} from './styles';
 
 const info = require('../../../../data/info');
 const me = require('../../../../data/images/me.png');
+const info = require('Data/info');
 
 export const About = () => (
   <Wrapper id="about">

@@ -12,7 +12,7 @@ import {
   legalName,
   foundingDate,
   logo,
-} from 'Data';
+} from 'Data/config';
 
 export const SEO = ({
   title = defaultTitle,

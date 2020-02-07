@@ -4,7 +4,7 @@ import Image from 'gatsby-image';
 import React from 'react';
 import {Card, Wrapper, Content} from './styles';
 
-const info = require('../../../../data/info');
+const info = require('Data/info');
 
 const imageStyle = {
   marginLeft: '-1em',
