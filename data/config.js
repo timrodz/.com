@@ -12,7 +12,7 @@ module.exports = {
     linkedin: 'https://www.linkedin.com/in/timrodz',
     stackoverflow: 'https://stackoverflow.com/users/4329379/juan-morais',
   },
-  googleAnalyticsID: '52663114',
+  googleAnalyticsID: 'UA-52663114-1',
   themeColor: '#0e9f96',
   backgroundColor: '#fff',
   social: {
