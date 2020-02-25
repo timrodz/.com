@@ -18,7 +18,7 @@ export const GithubProjects = () => {
     {
       github {
         repositoryOwner(login: "timrodz") {
-          repositories(first: 6, orderBy: {field: PUSHED_AT, direction: DESC}) {
+          repositories(first: 6, orderBy: {field: UPDATED_AT, direction: DESC}) {
             edges {
               node {
                 id
