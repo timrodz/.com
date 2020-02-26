@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/57c04515-1d1b-46e8-b531-213fabca9cc4/deploy-status)](https://app.netlify.com/sites/gatsby-portfolio-dev/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e5afe841-c2f4-4891-9a6c-abd2495e6be8/deploy-status)](https://app.netlify.com/sites/timrodz-portfolio/deploys)
 
 ## Theme
 
