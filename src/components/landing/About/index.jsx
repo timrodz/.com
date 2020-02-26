@@ -28,13 +28,10 @@ export const About = () => {
   `);
 
   const Img = () => {
-    console.log(edges);
-
     return edges.map(({node: image}) => {
       const id = image.id;
       const fluid = image.fluid;
-      console.log(`About: ${JSON.stringify(fluid)}`);
-      return <Image key={id} fluid={fluid} />;
+      return <Image loading="eager" key={id} fluid={fluid} />;
     });
   };
 
