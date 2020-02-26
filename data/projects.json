@@ -1,23 +1,23 @@
 [
   {
-    "title": "I Am Monster — Game",
-    "slug": "project-i_am_monster",
+    "title": "Instagram Portfolio — Gatsby Starter",
+    "slug": "project-gatsby-starter",
+    "url": "https://www.gatsbyjs.org/starters/timrodz/gatsby-starter-instagram-baseweb/",
+    "image": "./images/gatsby-starter.jpg",
+    "description": "Gatsby + React + GraphQL + Base Web"
+  },
+  {
+    "title": "Light Switch — VS Code Extension",
+    "slug": "project-light-switch",
+    "url": "https://marketplace.visualstudio.com/items?itemName=timrodz.lightswitch",
+    "image": "./images/light-switch.png",
+    "description": "VS Code + TypeScript + Azure DevOps"
+  },
+  {
+    "title": "I Am Monster — iOS & Android Game",
+    "slug": "project-i-am-monster",
     "url": "https://pikpok.com/games/i-am-monster/",
-    "image": "./images/i_am_monster.png",
+    "image": "./images/i-am-monster.png",
     "description": "Unity + Python"
-  },
-  {
-    "title": "El Mandamás — Game",
-    "slug": "project-mandamas",
-    "url": "https://timrodz.itch.io/el-mandamas/",
-    "image": "./images/mandamas.jpg",
-    "description": "Unity"
-  },
-  {
-    "title": "Ink Wars — Game",
-    "slug": "project-ink_wars",
-    "url": "http://inkwarsgame.com/",
-    "image": "./images/inkwars.jpg",
-    "description": "Unity"
   }
 ]
