@@ -2,6 +2,13 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e5afe841-c2f4-4891-9a6c-abd2495e6be8/deploy-status)](https://app.netlify.com/sites/timrodz-portfolio/deploys)
 
+## Local development
+
+In order to develop and build this project, you will need [Gatsby](https://www.gatsbyjs.com/) installed.
+
+- **Develop**: `gatsby develop`
+- **Build**: `gatsby build`
+
 ## Theme
 
 [Gatsby-theme-portfolio](https://github.com/smakosh/gatsby-theme-portfolio)
