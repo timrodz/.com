@@ -2,4 +2,4 @@
 # These rules will change if you change your site’s custom domains or HTTPS settings
 
 # Redirect default Netlify subdomain to primary domain
-http://timrodz-portfolio.netlify.com/* http://www.timrodz.com/:splat 301!
+http://timrodz-portfolio.netlify.com/* http://www.timrodz.dev/:splat 301!

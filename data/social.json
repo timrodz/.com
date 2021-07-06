@@ -7,21 +7,21 @@
   },
   {
     "id": 1,
-    "name": "Github",
+    "name": "GitHub",
     "link": "https://github.com/timrodz",
     "icon": "/icons/github.svg"
   },
   {
     "id": 2,
-    "name": "Twitter",
-    "link": "https://twitter.com/timrodz",
-    "icon": "/icons/twitter.svg"
-  },
-  {
-    "id": 3,
     "name": "DEV",
     "link": "https://dev.to/timrodz",
     "icon": "/icons/dev.svg"
+  },
+  {
+    "id": 3,
+    "name": "GitLab",
+    "link": "https://gitlab.com/timrodz",
+    "icon": "/icons/gitlab.svg"
   },
   {
     "id": 4,
