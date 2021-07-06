@@ -43,7 +43,6 @@ export const SEO = ({
     "sameAs": [
 			"${socialLinks.github}",
       "${socialLinks.linkedin}",
-      "${socialLinks.twitter}",
       "${socialLinks.stackoverflow}"
 		]
   	}`;
@@ -59,12 +58,6 @@ export const SEO = ({
       <meta property="og:description" content={description} />
       <meta property="og:image" content={Thumbnail} />
 
-      <meta name="twitter:card" content="summary" />
-      <meta name="twitter:creator" content={socialLinks.twitter} />
-      <meta name="twitter:site" content={social.twitter} />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:image:src" content={Thumbnail} />
       <script type="application/ld+json">{structuredDataOrganization}</script>
       <link rel="publisher" href={socialLinks.google} />
       <title>{title}</title>
