@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e5afe841-c2f4-4891-9a6c-abd2495e6be8/deploy-status)](https://app.netlify.com/sites/timrodz-portfolio/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3be06543-92dc-40b1-a38b-ceb1d83d9e3a/deploy-status)](https://app.netlify.com/sites/pensive-feynman-c564d9/deploys)
 
 ## Local development
 
