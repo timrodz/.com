@@ -19,7 +19,7 @@ export const Portfolio = () => {
       <p>{info.portfolio}</p>
       <h3>Projects</h3>
       <ProjectGrid>{<Projects/>}</ProjectGrid>
-      <hr/>
+      <br/>
       <h3>Games</h3>
       <ProjectGrid>{<Games/>}</ProjectGrid>
     </Wrapper>
