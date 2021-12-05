@@ -1,0 +1,23 @@
+[
+    {
+      "title": "Clusterduck",
+      "slug": "game-clusterduck",
+      "url": "https://pikpok.com/games/clusterduck/",
+      "image": "./images/clusterduck.png",
+      "description": "Unity"
+    },
+    {
+      "title": "I Am Monster — iOS & Android Game",
+      "slug": "game-i-am-monster",
+      "url": "https://pikpok.com/games/i-am-monster/",
+      "image": "./images/i-am-monster.png",
+      "description": "Unity + Python"
+    },
+    {
+      "title": "El Mandamás - Desktop & Web game",
+      "slug": "game-el-mandamas",
+      "url": "https://timrodz.itch.io/el-mandamas",
+      "image": "./images/el-mandamas.png",
+      "description": "Unity"
+    }
+  ]

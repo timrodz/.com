@@ -14,10 +14,10 @@
     "description": "VS Code + TypeScript + Azure DevOps"
   },
   {
-    "title": "I Am Monster — iOS & Android Game",
-    "slug": "project-i-am-monster",
-    "url": "https://pikpok.com/games/i-am-monster/",
-    "image": "./images/i-am-monster.png",
-    "description": "Unity + Python"
+    "title": "Twitter robot for game development",
+    "slug": "project-esgamedevbot",
+    "url": "https://twitter.com/EsGamedevBot/",
+    "image": "./images/esgamedevbot.png",
+    "description": "Python"
   }
 ]

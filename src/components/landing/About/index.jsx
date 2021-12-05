@@ -11,7 +11,7 @@ export const About = () => {
     allImageSharp: {edges},
   } = useStaticQuery(graphql`
     {
-      allImageSharp(filter: {original: {src: {regex: "/(me)/"}}}) {
+      allImageSharp(filter: {original: {src: {regex: "/(static/me)/"}}}) {
         edges {
           node {
             id
