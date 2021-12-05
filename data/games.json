@@ -1,6 +1,6 @@
 [
     {
-      "title": "Clusterduck",
+      "title": "Clusterduck — iOS & Android Game",
       "slug": "game-clusterduck",
       "url": "https://pikpok.com/games/clusterduck/",
       "image": "./images/clusterduck.png",
@@ -14,7 +14,7 @@
       "description": "Unity + Python"
     },
     {
-      "title": "El Mandamás - Desktop & Web game",
+      "title": "El Mandamás —  Desktop & Web game",
       "slug": "game-el-mandamas",
       "url": "https://timrodz.itch.io/el-mandamas",
       "image": "./images/el-mandamas.png",
