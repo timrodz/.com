@@ -1,8 +1,8 @@
-import {Container, Item, ProjectGrid} from 'Common';
-import {graphql, useStaticQuery} from 'gatsby';
+import { Container, Item, ProjectGrid } from 'Common';
+import { graphql, useStaticQuery } from 'gatsby';
 import Image from 'gatsby-image';
 import React from 'react';
-import {Card, Wrapper, Content} from './styles';
+import { Card, Wrapper, Content } from './styles';
 
 const info = require('Data/info');
 
@@ -11,9 +11,9 @@ const imageStyle = {
   marginRight: '-1em',
 };
 
-export const Portfolio = () => {
-  const {
-    allProjectsJson: {edges},
+const getProjects = () => (
+  {
+    allProjectsJson: { edges },
   } = useStaticQuery(graphql`
     {
       allProjectsJson {
@@ -34,13 +34,41 @@ export const Portfolio = () => {
         }
       }
     }
-  `);
+  `)
+)
 
-  const renderPortfolio = () => {
+const getGames = () => (
+  {
+    allGamesJson: { edges },
+  } = useStaticQuery(graphql`
+    {
+      allGamesJson {
+        edges {
+          node {
+            id
+            title
+            url
+            description
+            image {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+)
+
+export const Portfolio = () => {
+  const renderPortfolio = (edges) => {
     if (!edges || edges.length === 0) return null;
 
-    return edges.map(({node: project}) => {
-      const {id, url, title, description, image} = project;
+    return edges.map(({ node: project }) => {
+      const { id, url, title, description, image } = project;
       const imageData = image.childImageSharp.fluid;
       console.log(`Portfolio: ${JSON.stringify(imageData)}`);
 
@@ -67,7 +95,10 @@ export const Portfolio = () => {
     <Wrapper as={Container} id="portfolio">
       <h2>Portfolio</h2>
       <p>{info.portfolio}</p>
-      <ProjectGrid>{renderPortfolio()}</ProjectGrid>
+      <h3>Projects</h3>
+      <ProjectGrid>{renderPortfolio(getProjects())}</ProjectGrid>
+      <h3>Games</h3>
+      <ProjectGrid>{renderPortfolio(getGames())}</ProjectGrid>
     </Wrapper>
   );
 };

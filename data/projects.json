@@ -1,23 +1,23 @@
 [
   {
     "title": "Instagram Portfolio — Gatsby Starter",
-    "slug": "project-gatsby-starter",
+    "slug": "gatsby-starter",
     "url": "https://www.gatsbyjs.org/starters/timrodz/gatsby-starter-instagram-baseweb/",
     "image": "./images/gatsby-starter.jpg",
     "description": "Gatsby + React + GraphQL + Base Web"
   },
   {
     "title": "Light Switch — VS Code Extension",
-    "slug": "project-light-switch",
+    "slug": "light-switch",
     "url": "https://marketplace.visualstudio.com/items?itemName=timrodz.lightswitch",
     "image": "./images/light-switch.png",
     "description": "VS Code + TypeScript + Azure DevOps"
   },
   {
-    "title": "I Am Monster — iOS & Android Game",
-    "slug": "project-i-am-monster",
-    "url": "https://pikpok.com/games/i-am-monster/",
-    "image": "./images/i-am-monster.png",
+    "title": "Twitter robot for game development",
+    "slug": "esgamedevbot",
+    "url": "https://twitter.com/EsGamedevBot/",
+    "image": "./images/esgamedevbot.png",
     "description": "Unity + Python"
   }
 ]

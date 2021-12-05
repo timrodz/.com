@@ -3,7 +3,7 @@ module.exports = {
   title: 'Product Software Engineer',
   portfolio:
     'I have professional experience building Full Stack & Web Applications and Games — I embrace the challenge, independent of stack.',
-  projects:
+  githubProjects:
     'What am I working on? Here is my latest activity on Github, which involves personal, open source, and freelance projects.',
   posts:
     'I love sharing my knowledge with others. My content is centered around an audience starting with Web Technologies and Game Development.',

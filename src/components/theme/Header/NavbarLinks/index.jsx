@@ -6,7 +6,7 @@ const NavbarLinks = ({desktop}) => (
   <Wrapper desktop={desktop}>
     <AnchorLink href="#portfolio">Portfolio</AnchorLink>
     <AnchorLink href="#about">About</AnchorLink>
-    <AnchorLink href="#projects">Projects</AnchorLink>
+    <AnchorLink href="#github-projects">Github projects</AnchorLink>
     <AnchorLink href="#posts">Posts</AnchorLink>
   </Wrapper>
 );

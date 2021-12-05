@@ -84,7 +84,7 @@ export const GithubProjects = () => {
   return (
     <Wrapper as={Container} id="projects">
       <h2>Projects</h2>
-      <p>{info.projects}</p>
+      <p>{info.githubProjects}</p>
       <ProjectGrid>{renderProjects()}</ProjectGrid>
     </Wrapper>
   );
