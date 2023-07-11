@@ -1,5 +1,12 @@
 [
   {
+    "title": "Roast My Site",
+    "slug": "roastmysite",
+    "url": "https://roastmysite.io/",
+    "image": "./images/roastmysite.png",
+    "description": "NextJS + PostgreSQL"
+  },
+  {
     "title": "Instagram Portfolio — Gatsby Starter",
     "slug": "project-gatsby-starter",
     "url": "https://www.gatsbyjs.org/starters/timrodz/gatsby-starter-instagram-baseweb/",
@@ -12,12 +19,6 @@
     "url": "https://marketplace.visualstudio.com/items?itemName=timrodz.lightswitch",
     "image": "./images/light-switch.png",
     "description": "VS Code + TypeScript + Azure DevOps"
-  },
-  {
-    "title": "Twitter robot for game development",
-    "slug": "project-esgamedevbot",
-    "url": "https://twitter.com/EsGamedevBot/",
-    "image": "./images/esgamedevbot.png",
-    "description": "Python"
   }
 ]
+

@@ -41,26 +41,6 @@ export const GithubProjects = () => {
     }
   `);
 
-  const renderProjects = () => {
-    if (!edges || edges.length === 0) return null;
-
-    return edges.map(({node: project}) => {
-      const {id, url, name, description, isFork, parent, stargazers, forkCount} = project;
-
-      return (
-        <Item key={id} as="a" href={url} target="_blank" rel="noopener noreferrer">
-          <Card>
-            <Content>
-              <h4>{name}</h4>
-              <p>{description}</p>
-            </Content>
-            <Stats>{renderRepositoryType(parent, isFork, stargazers, forkCount)}</Stats>
-          </Card>
-        </Item>
-      );
-    });
-  };
-
   const renderRepositoryType = (parent, isFork, stargazers, forkCount) => {
     return isFork ? (
       <div>
@@ -81,6 +61,26 @@ export const GithubProjects = () => {
     );
   };
 
+  const renderProjects = () => {
+    if (!edges || edges.length === 0) return null;
+
+    return edges.map(({node: project}) => {
+      const {id, url, name, description, isFork, parent, stargazers, forkCount} = project;
+
+      return (
+        <Item key={id} as="a" href={url} target="_blank" rel="noopener noreferrer">
+          <Card>
+            <Content>
+              <h4>{name}</h4>
+              <p>{description}</p>
+            </Content>
+            <Stats>{renderRepositoryType(parent, isFork, stargazers, forkCount)}</Stats>
+          </Card>
+        </Item>
+      );
+    });
+  };
+
   return (
     <Wrapper as={Container} id="projects">
       <h2>Projects</h2>
@@ -89,3 +89,4 @@ export const GithubProjects = () => {
     </Wrapper>
   );
 };
+

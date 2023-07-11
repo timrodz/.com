@@ -29,8 +29,7 @@ export const About = () => {
 
   const Img = () => {
     return edges.map(({node: image}) => {
-      const id = image.id;
-      const fluid = image.fluid;
+      const {id, fluid} = image.id;
       return <Image loading="eager" key={id} fluid={fluid} />;
     });
   };
@@ -58,3 +57,4 @@ export const About = () => {
     </Wrapper>
   );
 };
+

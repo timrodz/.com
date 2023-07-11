@@ -27,11 +27,7 @@ export const Posts = () => {
     const slicedPosts = postData.slice(0, info.maxPostsToShow);
 
     return slicedPosts.map(post => {
-      const id = post['id'];
-      const title = post['title'];
-      const url = post['url'];
-      const imgUrl = post['social_image'];
-      const timestamp = post['published_timestamp'];
+      const {id, title, url, social_image: imgUrl, published_timestamp: timestamp} = post;
       const date = new Date(timestamp).toDateString().slice(4);
 
       return (
@@ -58,3 +54,4 @@ export const Posts = () => {
     </Wrapper>
   );
 };
+

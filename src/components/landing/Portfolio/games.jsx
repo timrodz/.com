@@ -1,8 +1,8 @@
-import { graphql, useStaticQuery } from 'gatsby';
+import {graphql, useStaticQuery} from 'gatsby';
 import React from 'react';
-import { renderPortfolio } from '.';
+import {renderPortfolio} from '.';
 
-export const Games = () => { 
+export const Games = () => {
   const {
     allGamesJson: {edges},
   } = useStaticQuery(graphql`
@@ -27,7 +27,6 @@ export const Games = () => {
     }
   `);
 
-  return (
-      <>{renderPortfolio(edges)}</>
-  );
+  return <>{renderPortfolio(edges)}</>;
 };
+

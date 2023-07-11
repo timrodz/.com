@@ -1,9 +1,9 @@
-import { Container, Item, ProjectGrid } from 'Common';
+import {Container, Item, ProjectGrid} from 'Common';
 import Image from 'gatsby-image';
 import React from 'react';
-import { Projects } from './projects';
-import { Games } from './games';
-import { Card, Content, Wrapper } from './styles';
+import {Projects} from './projects';
+import {Games} from './games';
+import {Card, Content, Wrapper} from './styles';
 
 const info = require('Data/info');
 
@@ -18,15 +18,15 @@ export const Portfolio = () => {
       <h2>Portfolio</h2>
       <p>{info.portfolio}</p>
       <h3>Projects</h3>
-      <ProjectGrid>{<Projects/>}</ProjectGrid>
-      <br/>
+      <ProjectGrid>{<Projects />}</ProjectGrid>
+      <br />
       <h3>Games</h3>
-      <ProjectGrid>{<Games/>}</ProjectGrid>
+      <ProjectGrid>{<Games />}</ProjectGrid>
     </Wrapper>
   );
 };
 
-export const renderPortfolio = (edges) => {
+export const renderPortfolio = edges => {
   if (!edges || edges.length === 0) return null;
 
   return edges.map(({node: project}) => {

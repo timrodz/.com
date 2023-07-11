@@ -4,7 +4,7 @@ module.exports = {
   author: 'Juan Alejandro Morais',
   url: 'https://www.timrodz.dev',
   legalName: 'Juan Alejandro Rodriguez Morais',
-  defaultDescription: 'Portfolio of Juan Alejandro Morais, Product Software Engineer.',
+  defaultDescription: 'Portfolio of Juan Alejandro Morais, Full-Stack Software Engineer.',
   socialLinks: {
     github: 'https://github.com/timrodz',
     gitlab: 'https://gitlab.com/timrodz',
@@ -23,3 +23,4 @@ module.exports = {
   },
   foundingDate: '2019',
 };
+
