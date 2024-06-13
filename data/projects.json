@@ -1,5 +1,19 @@
 [
   {
+    "title": "The Next Legends: Muhammad Ali",
+    "slug": "tnl",
+    "url": "https://www.thenextlegends.xyz/",
+    "image": "./images/tnl.jpg",
+    "description": "NextJS + Web3 + AWS"
+  },
+  {
+    "title": "Party Bear: Swappables",
+    "slug": "pb-swappables.jpg",
+    "url": "https://opensea.io/collection/partybear",
+    "image": "./images/party-bear",
+    "description": "NextJS + Web3 + AWS"
+  },
+  {
     "title": "Roast My Site — SaaS app",
     "slug": "roastmysite",
     "url": "https://roastmysite.io/",
